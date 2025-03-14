@@ -8,7 +8,7 @@ type introDataType = {
 
 const page = async () => {
   const response = await fetch('http://localhost:4000/intro', {
-    cache: 'no-store',
+    cache: 'force-cache',
   });
   const introData: introDataType = await response.json();
 
